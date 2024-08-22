@@ -1,0 +1,227 @@
+/* General body font */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header {
+    background-color: white;
+    height: 80px;
+    width: 97vw; /* Ensures the header occupies the full width of the viewport */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-family: 'Bahnschrift', sans-serif;
+    font-size: 24px;
+    color: mediumblue;
+    letter-spacing: 1px;
+}
+
+.search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Semi-bold */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Makes the search bar curvy */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centers the placeholder text */
+}
+
+.auth-button {
+    padding: 8px 15px; /* Adjusted size to fit within the screen */
+    background-color: mediumblue;
+    color: white;
+    border: none;
+    border-radius: 20px; /* Makes the button curvy */
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Semi-bold */
+    font-size: 17px;
+}
+
+.auth-button:hover {
+    background-color: #0033a0; /* Darker blue on hover */
+}
+.specializations-section {
+    margin: 20px 0;
+    padding: 10px ;
+}
+
+.row-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.radio-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between the radio container and the specialization div */
+    padding-right: 30px;
+}
+
+.radio-box {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px; /* Increased padding for a cleaner look */
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between radio buttons */
+    width: auto; /* Adjust width if necessary */
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black; /* Text color updated to black */
+}
+
+.selection-radio {
+    accent-color: mediumblue; /* Customize the radio button color */
+    margin-right: 5px;
+}
+
+.specializations-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.specialization-label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: mediumblue;
+    padding: 5px 10px;
+    background-color: #f0f8ff;
+    border: 1px solid #ccc;
+    border-radius: 15px; /* Small and curvy bordered rectangles */
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.specialization-checkbox {
+    accent-color: mediumblue; /* Customize the checkbox color */
+    margin-right: 5px;
+}
+
+.location-container {
+    margin-left: 10px; /* Decreased space between the specializations and the location button */
+}
+
+.detect-location-btn {
+    margin-right:30px;
+    padding: 10px 20px;
+    background-color: mediumblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.detect-location-btn:hover {
+    background-color: #0033a0;
+}
+
+.carousel-section {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Increased maximum width */
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 33.33%; /* Show 3 slides at once */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px; /* Increased padding */
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.details {
+    padding: 15px; /* Increased padding */
+    text-align: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 10px; /* Added margin-top */
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px; /* Increased padding */
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.search-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-btn {
+    background-color: mediumblue;
+    color: white;
+    border: none;
+    padding: 12px 24px; /* Increased padding */
+    border-radius: 5px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
